@@ -4,61 +4,61 @@ import java.util.Scanner;
 public class JavaStart05 {
 
 	public static void main(String[] args) {
-//		System.out.println(Math.sqrt(9)); //Á¦°ö±Ù ±¸ÇÏ´Â ½Ä
+//		System.out.println(Math.sqrt(9)); //ì œê³±ê·¼ êµ¬í•˜ëŠ” ì‹
 		
 		int arr1[]= {1,2,3,4,8};
 		System.out.println(java.util.Arrays.toString(arr1));
 		int arr2[]= {2,4,6,8,10};
 		System.out.println(Arrays.toString(arr2));
 		
-		//ÀÚÆÇ±â ±¸Çö
+		//ìžíŒê¸° êµ¬í˜„
 		
 		Scanner sc=new Scanner(System.in);
 		String str="";
 		
-		System.out.println("µ·À» ÅõÀÔÇØÁÖ¼¼¿ä");
+		System.out.println("ëˆì„ íˆ¬ìž…í•´ì£¼ì„¸ìš”");
 		
 		int deposit=Integer.parseInt(sc.nextLine());
 		while(!str.equals("4")) {
-		System.out.println("1.»çÀÌ´Ù 2.ÄÝ¶ó 3.È¯Å¸ 4.Á¾·á Áß ÇÏ³ª ¼±ÅÃ>>");
+		System.out.println("1.ì‚¬ì´ë‹¤ 2.ì½œë¼ 3.í™˜íƒ€ 4.ì¢…ë£Œ ì¤‘ í•˜ë‚˜ ì„ íƒ>>");
 		str=sc.nextLine();
 		switch(str) {
 		case "1":
 			if(deposit<700) {
-				System.out.println("ÀÜ¾×ºÎÁ·");}
+				System.out.println("ìž”ì•¡ë¶€ì¡±");}
 			else{
 				
-				System.out.println("ÀÜµ·Àº"+(deposit-700)+"ÀÔ´Ï´Ù");
+				System.out.println("ìž”ëˆì€"+(deposit-700)+"ìž…ë‹ˆë‹¤");
 				deposit=deposit-700;
 				
 			}
 			break;
 		case "2":
 			if(deposit<500) {
-				System.out.println("ÀÜ¾×ºÎÁ·");}
+				System.out.println("ìž”ì•¡ë¶€ì¡±");}
 			else{
 				deposit=deposit-500;
-			System.out.println("ÀÜµ·Àº"+deposit+"ÀÔ´Ï´Ù");
+			System.out.println("ìž”ëˆì€"+deposit+"ìž…ë‹ˆë‹¤");
 		
 			}
 			break;
 		case "3":
 			if(deposit<350) {
-				System.out.println("ÀÜ¾×ºÎÁ·");}
+				System.out.println("ìž”ì•¡ë¶€ì¡±");}
 			else{
 				deposit=deposit-350;
-				System.out.println("ÀÜµ·Àº"+deposit+"ÀÔ´Ï´Ù");
+				System.out.println("ìž”ëˆì€"+deposit+"ìž…ë‹ˆë‹¤");
 				break;
 				}
 			break;
 		case "4":
-			System.out.println("Á¾·áoff");
+			System.out.println("ì¢…ë£Œoff");
 			
 			int d1=deposit/1000;
 			int d2=deposit/500;
 			int d3=deposit%500/100;
 			int d4=deposit%500%100/50;
-			System.out.printf("°Å½º¸§µ·Àº 1000¿ø %dÀå,500¿ø %dÀå, 100¿ø %dÀå, 50¿ø %dÀå ÀÔ´Ï´Ù",d1,d2,d3,d4);
+			System.out.printf("ê±°ìŠ¤ë¦„ëˆì€ 1000ì› %dìž¥,500ì› %dìž¥, 100ì› %dìž¥, 50ì› %dìž¥ ìž…ë‹ˆë‹¤",d1,d2,d3,d4);
 			break;
 			
 			default:
